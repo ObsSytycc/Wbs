@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8fd4900b4985e619515ec8d5b95a285fc2fba81
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -7,7 +11,11 @@
 
 # testing
 /coverage
+<<<<<<< HEAD
+package-lock.jso
+=======
 
+>>>>>>> b8fd4900b4985e619515ec8d5b95a285fc2fba81
 # production
 /build
 
@@ -21,3 +29,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
+
+=======
+>>>>>>> b8fd4900b4985e619515ec8d5b95a285fc2fba81
