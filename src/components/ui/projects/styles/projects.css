@@ -1,0 +1,98 @@
+.projects {
+  background-color: var(--gray-color3);
+  padding: 9.375em 0 5.625em;
+}
+
+.projects .project-content {
+  background-color: transparent;
+  margin-top: 6.25rem;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.projects .project-list {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3.125rem;
+  transform: translateY(0);
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+
+.projects .sytycc-project-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 1px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.projects .img-top {
+  height: 245px;
+}
+
+.projects .sytycc-project-card img {
+  height: 245px;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
+}
+
+.sytycc-project-card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 1.25em;
+  gap: 0 0.625rem;
+}
+
+.sytycc-project-card h3,
+.sytycc-project-card .project-info > p:nth-child(2) {
+  font-size: var(--emph-text);
+  line-height: var(--sf-line-height);
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.sytycc-project-card .project-info > p:nth-child(2) {
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.sytycc-project-card .project-info > p:last-child {
+  font-size: var(--main-text);
+  line-height: var(--sf-line-height);
+  color: var(--gray-color4);
+}
+
+.sytycc-project-card a {
+  transform: translateY(1rem);
+  -moz-transform: translateY(1rem);
+  -webkit-transform: translateY(1rem);
+}
+
+@media only screen and (min-width: 600px) {
+  .projects .project-content {
+    background-color: #fff;
+  }
+
+  .projects .project-list {
+    padding: 3.75rem 2.5em;
+  }
+
+  .sytycc-project-card .card-body {
+    padding: 1.5em 1.875em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .projects .project-content {
+    margin-top: 20rem;
+  }
+
+  .projects .project-list {
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    padding: 0 2.5rem;
+  }
+}
