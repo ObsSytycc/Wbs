@@ -38,7 +38,7 @@ export default function Membersay() {
       };
 
   return (
-     <Paper elevation={2} sx={style.container}>
+     <Box  sx={style.container}>
       <Typography sx={style.wom}>
       What Our Members Say About Us
       </Typography>
@@ -54,7 +54,7 @@ export default function Membersay() {
     <MemberCard rate={4} name="Okenwa Sarah" role="CTO, Sapphire" img={oranu}/>
 </Carousel>
       </Box>
-     </Paper>
+     </Box>
   )
 }
 const style={
@@ -65,7 +65,6 @@ const style={
     flexDirection:'column',
     justifyContent:'center',
     alignItems:'center',
-    padding:'20px'
   },
   wom:{
 fontFamily: "Mont",

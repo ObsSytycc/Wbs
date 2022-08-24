@@ -5,15 +5,14 @@ const theme = (value) =>
 	createTheme({
 		palette: {
 			primary: {
-				main: '#06113CE5',
-				dark: '#141110',
+				main: '#FF8C32',
 			},
 			secondary: {
 				main: '#FF8C32',
 			},
 			
 		},
-		
+	
 	}) ;
 
 export default theme;
