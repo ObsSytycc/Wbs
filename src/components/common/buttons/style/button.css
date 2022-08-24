@@ -1,0 +1,21 @@
+.sytycc-btn {
+  padding: 0.75rem 3rem;
+  font-size: var(--emph-text);
+  line-height: var(--sm-line-height);
+  border-radius: 15px;
+  transition: all 0.35s ease-out;
+  --moz-transition: all 0.35s ease-out;
+  -webkit-transition: all 0.35s ease-out;
+}
+
+.sytycc-btn.primary-btn {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: 1px solid var(--accent-color);
+}
+
+.sytycc-btn.secondary-btn {
+  background-color: #ffffff;
+  color: var(--accent-color);
+  border: 1px solid #ffffff;
+}

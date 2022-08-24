@@ -29,7 +29,7 @@ export default function Membersay() {
       const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
         const { carouselState: { currentSlide } } = rest;
         return (
-          <div className="carousel-button-group"> // remember to give it position:absolute
+          <div className="carousel-button-group"> 
             <button className={currentSlide === 0 ? 'disable' : ''} onClick={() => previous()} />
             <button onClick={() => next()} />
             <button onClick={() => goToSlide(currentSlide + 1)}> Go to any slide </button>

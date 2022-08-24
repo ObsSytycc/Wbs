@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './styles/index.css';
 import store from './store';
 import {Provider} from 'react-redux';
+import './styles/utils.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import "@fontsource/montserrat";
+import "@fontsource/montserrat/500.css";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/montserrat/700.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
  <Provider store={store}>
-  <App/>
+    <App/>
  </Provider>
 
 );

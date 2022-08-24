@@ -1,5 +1,7 @@
+
 import { authRoutes,mainRoutes } from './routes';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 function App() {
   const getRoutes=(routes)=>{
     console.log(routes)
@@ -15,6 +17,7 @@ return   routes.map((e,i)=>{
       {getRoutes(mainRoutes)}
     </Routes>
   </Router>
+
   );
 }
 

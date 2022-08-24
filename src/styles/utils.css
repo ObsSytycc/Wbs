@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #06113C;
+  --accent-color: #FF8C32;
+  --secondary-dark: #1C264D;
+  --secondary-light: #374061;
+  --gray-color1: #DDDDDD;
+  --gray-color2: #EEEEEE;
+  --gray-color3: #EEF0F2;
+  --gray-color4: #A0A0A0;
+
+  /* Font */
+  --lf-line-height: 120%;
+  --sf-line-height: 150%;
+  --base-size: 1.15rem;
+  --type-scale: 1.05;
+  --h5: calc(var(--base-size) * 0.85);
+  --main-text: calc(var(--h5) * var(--type-scale));
+  --emph-text: calc(var(--main-text) * var(--type-scale));
+  --desc-text: calc(var(--emph-text) * var(--type-scale));
+  --h4: calc(var(--desc-text) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale) * var(--type-scale) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale) * var(--type-scale) * var(--type-scale));
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --type-scale: 1.1;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    --type-scale: 1.15;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+}

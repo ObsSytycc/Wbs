@@ -44,7 +44,7 @@ const style={
     alignItems:'center',
     marginTop:'-10px',
     backgroundColor:'#fff',
-    height:'450px',
+    minHeight:'450px',
     padding:'20px',
     boxShadow:"3px 3px 10px 3px rgb(0 0 0 / 0.2)",
     
