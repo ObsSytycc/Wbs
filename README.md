@@ -81,3 +81,4 @@ ctrl+c will stop the running application in Dev. mode but incase it did not, run
 
 AWS S3 bucket was used for this deployment. The script will only be successful IFF the AWS credentials with the right permissions 
 have been added to the system that deploys to AWS Cloud
+To Check the deployed application, [Click here:](http://sytycc-website.s3-website-us-east-1.amazonaws.com/)
