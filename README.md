@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Static Web page(Frontend) deployment
+
+### `npm run start` to the Application in Dev. mode
+
+### `npm run stop` to stop the Application Running in Dev.mode
+
+ctrl+c will stop the running application in Dev. mode but incase it did not, run `npm run stop`
+
+### `npm run deploy` to deploy to AWS cloud.
+
+AWS S3 bucket was used for this deployment. The script will only be successful IFF the AWS credentials with the right permissions 
+have been added to the system that deploys to AWS Cloud
