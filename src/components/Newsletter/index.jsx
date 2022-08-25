@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, TextField, Typography,Button } from '@mui/material'
+import { Box, TextField, Typography,Button,InputBase } from '@mui/material'
 export default function Newsletter() {
   return (
     <Box sx={style.container}>
@@ -11,16 +11,14 @@ export default function Newsletter() {
       <Typography sx={style.descTxt}>
       Subscribe to our newsletter
       </Typography>
-      <TextField sx={style.input} placeholder="Enter your email here" 
-       InputProps={{
-        endAdornment: (
-         <Box sx={style.btnCont}>
+      <InputBase sx={style.input} placeholder="Enter your email here" 
+      endAdornment={
+        <Box sx={style.btnCont}>
         <Button sx={style.btn}>
           Subscribe
          </Button>
         </Box>
-        )
-     }}
+      }
       />
       </Box>
      </Box>
@@ -68,6 +66,7 @@ const style={
         boxShadow:'2px 2px 8px rgba(0, 0, 0, 0.25)',
         backgroundColor:'#fff',
         borderRadius:'15px',
+        paddingLeft:"10px"
     },
     btn:{
         backgroundColor:'#06113C',

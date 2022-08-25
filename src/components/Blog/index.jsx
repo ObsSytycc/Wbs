@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box,TextField, Typography,IconButton,Tabs, Tab} from '@mui/material';
+import {Box,TextField,InputBase, Typography,IconButton,Tabs, Tab} from '@mui/material';
 import {BsSearch} from 'react-icons/bs';
 import TabPanel from '../Tabpanel';
 import All from './All';
@@ -16,11 +16,10 @@ export default function Blog() {
        <Box sx={style.blogHead}>
        <Typography sx={style.bgTxt}>Blog</Typography>
        </Box>
-        <TextField 
-           InputProps={{
-            startAdornment:
-            <IconButton sx={style.searchBtn} onClick={()=>0}><BsSearch/></IconButton>,
-            }}
+        <InputBase 
+         startAdornment={
+          <IconButton sx={style.searchBtn} onClick={()=>0}><BsSearch/></IconButton>
+         }
         variant="outlined" placeholder="Search" sx={style.search} size="medium"
         />
       </Box>
@@ -114,11 +113,13 @@ lineHeight:"46px",
        marginTop:'-20px',
        backgroundColor:'#fff',
        boxShadow:"3px 3px 10px 3px rgb(0 0 0 / 0.2)",
-      outlineSize:'0px'
-      
+      outlineSize:'0px',
+      height:'60px',
+      paddingLeft:'10px'
     },
     searchBtn:{
         marginRight:'10px',
+       
     },
     blogCont:{
     display:'flex',
